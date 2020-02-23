@@ -4,21 +4,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Semantic CSS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script> -->
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
     <!-- CSS Local Stylesheet -->
     <!-- <link rel="stylesheet" type="text/css" href="../css/styles.css"> -->
     <!-- jQuery CDN -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <!-- JavaScript Local Script Sheet -->
     <!-- <script src="main.js"></script> -->
-    <title>Title Here</title>
+    <title>JournalMate</title>
 </head>
 <body>
     <div class="ui container">
-        <h1>Hello</h1>
+        <h1>JournalMate</h1>
+        <form class="ui form" id="entry-submission">
+            <h3 class="ui header">Submit a Post:</h3>
+            <div class="input">
+                <label for="enterTitle">
+                    Title:
+                </label>
+                <input id="enterTitle" type="text" placeholder="Enter your post title here" value="Beautiful Title" />
+            </div>
+            <div class="input">
+             <label for="postArea">Create your post:</label><br>
+              <textarea placeholder="Write your post" id="postArea">Lorem Ipsum</textarea>
+            </div>
+            <button type="submit" class="ui fluid basic yellow button">Submit</button>
+        </form>
+        <!-- Output -->
+        <!-- <section class="individual-post">
+
+        </section> -->
     </div>
-    
 </body>
 </html>
