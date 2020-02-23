@@ -10,6 +10,9 @@ $(document).ready(function() {
     console.log(entry.countWords());
     console.log(entry.countVowels());
     console.log(entry.countConsonants());
+    console.log(entry.getTeaser());
+
+    entry.displayEntry();
 
     event.preventDefault();
   });
